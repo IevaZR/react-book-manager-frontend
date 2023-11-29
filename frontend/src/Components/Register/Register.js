@@ -3,6 +3,7 @@ import "./Register.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+
 const Register = () => {
   const [registerThankYouMsgVisible, setRegisterThankYouMsgVisible] =
     useState(false);
@@ -45,8 +46,11 @@ const Register = () => {
   };
 
   const getUsers = async () => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
+    console.log(backendUrl)
     try {
-      const data = await axios.get(`${process.env.BACKEND_URL}/user`);
+      const data = await axios.get(`${backendUrl}/user`);
+      console.log(backendUrl)
       setUsers(data.data);
     } catch (error) {
       console.log(error);
@@ -72,8 +76,9 @@ const Register = () => {
         readingListBooks: [],
         finishedBooks: [],
       };
+      const backendUrl = process.env.REACT_APP_BACKEND_URL
       try {
-        await axios.post(`${process.env.BACKEND_URL}/user/create-user`, user);
+        await axios.post(`${backendUrl}/user/create-user`, user);
         setRegisterThankYouMsgVisible(true);
         setInputValues({
           name: "",

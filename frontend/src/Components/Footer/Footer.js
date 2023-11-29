@@ -17,8 +17,9 @@ const Footer = () => {
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (inputValue.match(emailRegex)) {
+      const backendUrl = process.env.REACT_APP_BACKEND_URL
       try {
-        await axios.post(`${process.env.BACKEND_URL}/email/add-email`, {
+        await axios.post(`${backendUrl}/email/add-email`, {
           email: inputValue,
         });
       } catch (error) {

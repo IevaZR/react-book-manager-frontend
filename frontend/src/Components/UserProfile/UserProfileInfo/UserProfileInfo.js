@@ -42,10 +42,11 @@ const UserProfileInfo = () => {
   };
 
   const updateUserInDB = async (updatedUser) => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
     console.log(updatedUser);
     try {
       await axios.put(
-        `${process.env.BACKEND_URL}/user/update-user-by-id/${updatedUser._id}`,
+        `${backendUrl}/user/update-user-by-id/${updatedUser._id}`,
         updatedUser
       );
     } catch (error) {
@@ -54,9 +55,10 @@ const UserProfileInfo = () => {
   };
 
   const deleteUser = async () => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
     try {
       await axios.delete(
-        `${process.env.BACKEND_URL}/user/delete-user/${currentUser._id}`
+        `${backendUrl}/user/delete-user/${currentUser._id}`
       );
       dispatch(logoutUser())
     } catch (error) {

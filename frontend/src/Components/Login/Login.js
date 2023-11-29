@@ -28,9 +28,10 @@ const Login = () => {
   };
 
   const loginUser = async () => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
     try {
       const { data } = await axios.post(
-        `${process.env.BACKEND_URL}/user/login-user`,
+        `${backendUrl}/user/login-user`,
         inputData
       );
       if (data === "Authorized") {
@@ -46,9 +47,10 @@ const Login = () => {
   };
 
   const fetchUserData = async () => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
     try {
       const data = await axios.get(
-        `${process.env.BACKEND_URL}/user/get-user/${inputData.email}`
+        `${backendUrl}/user/get-user/${inputData.email}`
       );
       const user = data.data[0];
       console.log(user);

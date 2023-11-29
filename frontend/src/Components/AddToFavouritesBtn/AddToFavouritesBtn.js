@@ -30,9 +30,10 @@ const AddToFavouritesBtn = ({ book, bookCover, updatedUserBooksList }) => {
   };
 
   const updateUserInDB = async (updatedUser) => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
     try {
       await axios.put(
-        `${process.env.BACKEND_URL}/user/update-user/${updatedUser.email}`,
+        `${backendUrl}/user/update-user/${updatedUser.email}`,
         updatedUser
       );
     } catch (error) {
