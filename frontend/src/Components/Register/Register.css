@@ -1,0 +1,125 @@
+.RegisterWrapper {
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.RegisterWrapper h3 {
+    font-family: 'Gilda Display', serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+.RegisterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.RegisterForm label {
+    font-family: 'Gilda Display', serif;
+    font-size: 18px;
+    margin: 0 0 0.5rem 0;
+}
+
+.RegisterForm input {
+    
+    margin: 0 0 1rem 0;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    height: 2rem;
+}
+
+.RegisterFormBtn {
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 1rem 0 0 0;
+    font-family: "Gilda Display", serif;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(#f7f6f0, #d0cfc7);
+  color: black !important;
+  transition: all 100ms ease-out;
+}
+
+.RegisterFormBtn:hover {
+    background: linear-gradient( #d0cfc7, #f7f6f0);
+  }
+
+.RegisterNameWrapper, .RegisterEmailWrapper, .RegisterPasswordWrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterInputWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.RegisterThankYouMsg {
+    font-family: 'Gilda Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+}
+
+.RegisterThankYouMsg a {
+    color: black;
+}
+
+.RegisterValidErrMsg {
+    margin-top: -0.8rem;
+    font-size: 10px;
+    color: rgb(220, 4, 4);
+    align-self: center;
+    display: flex;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 2000px) {
+    .RegisterWrapper {
+        min-width: none;
+    }
+
+    .RegisterWrapper h3 {
+        font-size: 25px;
+    }
+
+    .RegisterForm label {
+        font-size: 15px;
+    }
+
+    .RegisterFormBtn {
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 899px) {
+    .RegisterWrapper {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .RegisterNameWrapper, .RegisterEmailWrapper, .RegisterPasswordWrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+  }

@@ -1,0 +1,12 @@
+.RemoveFromMyBooksBtn {
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-size: 10px;
+  cursor: pointer;
+  background-color: rgb(77, 77, 77);
+  border: none;
+  color: white;
+}

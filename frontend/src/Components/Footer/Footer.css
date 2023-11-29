@@ -1,0 +1,103 @@
+.FooterWrapper {
+  width: 100%;
+  display: flex;
+  padding: 1rem 10% 1rem 10%;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 2rem;
+  background-color: #eeede5;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.24) -5px 0px 6px, rgba(0, 0, 0, 0.24) 5px 0px 6px,
+    rgba(0, 0, 0, 0.24) 0px -6px 7px, rgba(0, 0, 0, 0.24) 0px 5px 6px;
+}
+
+.FooterNewsletterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterNewsletterWrapper h6 {
+  font-family: "Gilda Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.FooterNewsletterWrapper input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.FooterButton {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  font-family: "Gilda Display", serif;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.BlackBtn {
+  background: linear-gradient(#777773, #3a3932);
+  color: white !important;
+}
+
+.BlackBtn:hover {
+  transition: all 100ms ease-out;
+  background: linear-gradient(#3a3932, #777773);
+}
+
+.FooterNewsletterWrapper p {
+  font-family: "Gilda Display", serif;
+  font-size: 10px;
+  margin: 0;
+}
+
+.ErrorMsg {
+  color: red;
+}
+
+.FooterContactInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterContactInfoWrapper h6 {
+  font-family: "Gilda Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.FooterContactInfoWrapper p {
+  font-family: "Gilda Display", serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (max-width: 579px) {
+  .FooterWrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .FooterNewsletterWrapper {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .FooterNewsletterWrapper h6 {
+    text-align: center;
+  }
+  
+  .FooterContactInfoWrapper {
+    align-items: center;
+  }
+}

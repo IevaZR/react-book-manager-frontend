@@ -1,0 +1,62 @@
+.UserBookItemWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  font-family: "Gilda Display", serif;
+}
+
+.UserBookImageWrapper {
+  height: 250px;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.UserBookImage {
+  height: 250px;
+  object-fit: contain;
+}
+
+.UserBookItemWrapper h5 {
+  font-size: 1rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.UserBookItemWrapper p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.UserBookItemButtonsWrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.UserBookItemRemoveButton {
+  font-family: "Gilda Display", serif;
+  color: red;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.UserBookItemMarkAsReadButton {
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  font-family: "Gilda Display", serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: green;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}

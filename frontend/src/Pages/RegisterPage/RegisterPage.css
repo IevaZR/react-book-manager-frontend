@@ -1,0 +1,60 @@
+.RegisterPageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cbcac3;
+    padding: 0.5rem 5% 0.5rem 5%;
+    box-sizing: border-box;
+}
+
+.RegisterPageMainSectionWrapper {
+    width: 100%;
+    display: flex;
+    padding: 3rem 10% 5rem 10%;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    gap: 2rem;
+    background-color: #f4f2ea;
+    box-shadow: rgba(0, 0, 0, 0.24) -5px 2px 6px, rgba(0, 0, 0, 0.24) 5px 2px 6px;
+}
+
+.RegisterPageImageWrapper {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.RegisterPageImageWrapper img {
+    width: 500px;
+}
+
+@media screen and (max-width: 2000px) {
+    .RegisterPageImageWrapper img {
+      width: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .RegisterPageImageWrapper img {
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 899px) {
+    .RegisterPageMainSectionWrapper {
+      flex-direction: column;
+    }
+  
+    .RegisterWrapper {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .RegisterPageImageWrapper img {
+      width: 250px;
+    }
+  }

@@ -1,0 +1,23 @@
+.AddToFavouritesBtn,
+.BookItemLinkToLoginBtn {
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  font-family: "Gilda Display", serif;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  color: black;
+}
+
+.WhiteBtn {
+  background: linear-gradient(#eeede5, #acaba4);
+  color: black !important;
+  transition: all 100ms ease-out;
+}
+
+.WhiteBtn:hover {
+  background: linear-gradient(#acaba4, #eeede5);
+}
+

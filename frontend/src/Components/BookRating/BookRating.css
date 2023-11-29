@@ -1,0 +1,16 @@
+.BookRatingWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.BookRatingWrapper label {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   margin: 0 3px;
+}
+
+.BookRatingWrapper input {
+    display: none;
+}

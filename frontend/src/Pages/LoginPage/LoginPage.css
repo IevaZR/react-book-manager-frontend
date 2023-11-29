@@ -1,0 +1,58 @@
+.LoginPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #cbcac3;
+  padding: 0.5rem 5% 0.5rem 5%;
+  box-sizing: border-box;
+}
+
+.LoginPageMainSectionWrapper {
+  width: 100%;
+  display: flex;
+  padding: 2rem 10% 5rem 10%;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  gap: 2rem;
+  background-color: #f4f2ea;
+  box-shadow: rgba(0, 0, 0, 0.24) -5px 2px 6px, rgba(0, 0, 0, 0.24) 5px 2px 6px;
+}
+
+.LoginPageImageWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.LoginPageImageWrapper img {
+  width: 500px;
+}
+
+@media screen and (max-width: 2000px) {
+  .LoginPageImageWrapper img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .LoginPageImageWrapper img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .LoginPageMainSectionWrapper {
+    flex-direction: column;
+  }
+
+  .LoginWrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .LoginPageImageWrapper img {
+    width: 250px;
+  }
+}

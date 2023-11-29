@@ -1,0 +1,146 @@
+.HeroSectionWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 10% 1rem 10%;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  box-sizing: border-box;
+  background-image: url("./../../Assets/bookshelf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) -5px 0px 6px, rgba(0, 0, 0, 0.24) 5px 0px 6px,
+    rgba(0, 0, 0, 0.24) 0px -5px 6px, rgba(0, 0, 0, 0.24) 0px 5px 6px;
+  z-index: 10;
+}
+
+.HeroSectionHeading {
+  font-family: "Gilda Display", serif;
+  font-size: 80px;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: rgba(37, 37, 37, 0.452);
+  border-radius: 10px;
+  color: white;
+}
+
+.HeroSectionText {
+  font-family: "Gilda Display", serif;
+  font-size: 18px;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255);
+}
+
+.HeroSectionButtonsWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.HeroSectionButton {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  font-family: "Gilda Display", serif;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.BlackBtn {
+  background: linear-gradient(#777773, #3a3932);
+  color: white !important;
+}
+
+.BlackBtn:hover {
+  transition: all 100ms ease-out;
+  background: linear-gradient(#3a3932, #777773);
+}
+
+.WhiteBtn {
+  background: linear-gradient(#eeede5, #acaba4);
+  color: black !important;
+  transition: all 100ms ease-out;
+}
+
+.WhiteBtn:hover {
+  background: linear-gradient(#acaba4, #eeede5);
+}
+
+.LogedInBtn {
+  width: 240px;
+}
+
+.HeroSectionImageWrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  background-image: url(./../../Assets/book-readers-collage-2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 908px) {
+  .HeroSectionWrapper {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeroSectionWrapper {
+    padding: 0.5rem;
+  }
+  .HeroSectionHeading {
+    font-size: 65px
+  }
+
+  .HeroSectionButton {
+    width: 150px;
+    height: 35px ;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .HeroSectionHeading {
+    font-size: 55px
+  }
+
+  .HeroSectionButton {
+    width: 150px;
+    height: 35px ;
+  }
+
+  .HeroSectionText {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HeroSectionHeading {
+    font-size: 50px
+  }
+
+  .HeroSectionButton {
+    width: 150px;
+    height: 35px ;
+  }
+}

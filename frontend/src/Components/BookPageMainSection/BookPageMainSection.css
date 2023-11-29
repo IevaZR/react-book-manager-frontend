@@ -1,0 +1,174 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.BookPageMainSectionWrapper {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5% 0 5%;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background-color: #eeede5;
+  box-shadow: rgba(0, 0, 0, 0.24) -5px 3px 6px, rgba(0, 0, 0, 0.24) 5px 3px 6px;
+}
+
+.BookPageStickyBackground {
+  background-image: url("./../../Assets/bookshelf.png");
+  background-size: cover;
+  width: 111%;
+  position: sticky;
+  top: 0;
+}
+
+.BookShelfWrapper {
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.BookPageTopBooksSectionWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.BookShelfTop {
+  min-height: 300px;
+  background-color: #cbcac3;
+  width: 90%;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  box-shadow: rgb(0, 0, 0) -5px 3px 6px, rgba(0, 0, 0, 0.24) 5px 3px 6px;
+}
+
+.FirstBookBigWrapper {
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.BookShelfLeftInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem 0 2rem;
+  max-width: 30%;
+}
+
+.BookShelfLeftInfoWrapper a {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.BookShelfHeadingWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BookShelfHeading {
+  font-family: "Gilda Display", serif;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+  text-wrap: wrap;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.BookShelfHeadingWrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.BookShelf {
+  clip-path: polygon(99% 100%, 95% 0, 5% 0, 1% 100%);
+  background-color: #a7a7a2;
+  height: 35px;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+
+.BookShelfFront {
+  background-color: rgb(211, 191, 164);
+  height: 10px;
+  width: 98%;
+  z-index: 3;
+  border-radius: 3px;
+}
+
+.BookShelfShadowObject {
+  clip-path: polygon(95% 100%, 100% 0, 0% 0, 5% 100%);
+  height: 2rem;
+  width: 100%;
+  background-color: #6c6c68;
+  position: relative;
+  top: 0;
+  border-radius: 0 0 30px 30px;
+}
+
+.BookShelfShadow {
+  filter: drop-shadow(-5px -2px 5px #6c6c68) drop-shadow(5px 3px 5px #6c6c68);
+}
+
+.BookShelfBottom {
+  min-height: 150px;
+  background-color: #cbcac3;
+  width: 90%;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+}
+
+.BookPageTopBooksSectionWrapper h1 {
+  font-family: "Gilda Display", serif;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.BookPageTopBooksWrapper {
+  margin: 2rem 0 2rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 819px) {
+  .BookShelfTop {
+    flex-direction: column;
+  }
+
+  .BookShelfLeftInfoWrapper {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .BookShelfHeadingWrapper {
+    align-items: center;
+  }
+
+  .BookShelfHeading {
+    align-self: center;
+  }
+
+  .BookShelfLeftInfoWrapper p {
+    align-self: center;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
