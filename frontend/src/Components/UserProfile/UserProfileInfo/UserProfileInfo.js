@@ -45,7 +45,7 @@ const UserProfileInfo = () => {
     console.log(updatedUser);
     try {
       await axios.put(
-        `http://localhost:3009/user/update-user-by-id/${updatedUser._id}`,
+        `${process.env.BACKEND_URL}/user/update-user-by-id/${updatedUser._id}`,
         updatedUser
       );
     } catch (error) {
@@ -56,7 +56,7 @@ const UserProfileInfo = () => {
   const deleteUser = async () => {
     try {
       await axios.delete(
-        `http://localhost:3009/user/delete-user/${currentUser._id}`
+        `${process.env.BACKEND_URL}/user/delete-user/${currentUser._id}`
       );
       dispatch(logoutUser())
     } catch (error) {

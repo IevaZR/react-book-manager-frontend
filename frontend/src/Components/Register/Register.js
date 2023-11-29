@@ -46,7 +46,7 @@ const Register = () => {
 
   const getUsers = async () => {
     try {
-      const data = await axios.get("http://localhost:3009/user");
+      const data = await axios.get(`${process.env.BACKEND_URL}/user`);
       setUsers(data.data);
     } catch (error) {
       console.log(error);
@@ -73,7 +73,7 @@ const Register = () => {
         finishedBooks: [],
       };
       try {
-        await axios.post("http://localhost:3009/user/create-user", user);
+        await axios.post(`${process.env.BACKEND_URL}/user/create-user`, user);
         setRegisterThankYouMsgVisible(true);
         setInputValues({
           name: "",

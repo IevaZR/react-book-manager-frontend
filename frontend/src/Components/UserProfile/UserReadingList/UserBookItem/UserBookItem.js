@@ -52,7 +52,7 @@ const UserBookItem = ({ book }) => {
   const updateUserInDB = async (updatedUser) => {
     try {
       await axios.put(
-        `http://localhost:3009/user/update-user/${updatedUser.email}`,
+        `${process.env.BACKEND_URL}/user/update-user/${updatedUser.email}`,
         updatedUser
       );
     } catch (error) {

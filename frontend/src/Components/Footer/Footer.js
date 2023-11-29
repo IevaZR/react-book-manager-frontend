@@ -18,7 +18,7 @@ const Footer = () => {
 
     if (inputValue.match(emailRegex)) {
       try {
-        await axios.post("http://localhost:3009/email/add-email", {
+        await axios.post(`${process.env.BACKEND_URL}/email/add-email`, {
           email: inputValue,
         });
       } catch (error) {
