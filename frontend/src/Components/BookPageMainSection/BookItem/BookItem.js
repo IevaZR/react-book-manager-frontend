@@ -16,7 +16,7 @@ const BookItem = ({ book, index, openAboutBook }) => {
 
   useEffect(() => {
     if (book) {
-      // fetchGoogleBookData();
+      fetchGoogleBookData();
     }
     if (currentUser) {
       isBookInUserBooksList();
@@ -25,7 +25,6 @@ const BookItem = ({ book, index, openAboutBook }) => {
     // setBookCover(
     //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoGC9MuJKNcUQVn1DB9w57JWZkTrjhLbKx-Q&usqp=CAU"
     // );
-    console.log(book)
   }, []);
 
   const fetchGoogleBookData = () => {
