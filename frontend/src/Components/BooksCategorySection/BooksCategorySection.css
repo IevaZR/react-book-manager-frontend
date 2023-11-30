@@ -54,7 +54,7 @@
 }
 
 .BooksCategorySectionTopBooksDescriptionWrapper a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 
@@ -87,6 +87,7 @@
 
   .BooksCategorySectionTopBooksDescriptionWrapper h2 {
     font-size: 30px;
+    text-align: center;
   }
 
   .BooksCategorySectionTopBooksDescriptionWrapper p {

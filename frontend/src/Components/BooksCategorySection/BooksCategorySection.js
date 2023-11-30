@@ -16,7 +16,9 @@ const BooksCategorySection = () => {
             lost in captivating stories and imaginative worlds.
           </p>
           <button>
-            <Link to="/books#FictionBooks">Read more <img src={Arrow} alt="arrow" /></Link>
+            <Link to="/books#FictionBooks">Read more 
+            {/* <img src={Arrow} alt="arrow" /> */}
+            </Link>
           </button>
         </div>
         <div className="BooksCategorySectionTopBooksImageWrapper">
@@ -34,7 +36,9 @@ const BooksCategorySection = () => {
             a wide range of topics and provide valuable knowledge and insights.
           </p>
           <button>
-            <Link to="/books#NonFictionBooks">Read more <img src={Arrow} alt="arrow" /></Link>
+            <Link to="/books#NonFictionBooks">Read more 
+            {/* <img src={Arrow} alt="arrow" /> */}
+            </Link>
           </button>
         </div>
       </div>
