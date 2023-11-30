@@ -35,6 +35,8 @@ const Login = () => {
         inputData
       );
       if (data === "Authorized") {
+        document.cookie = `session_token=${data}`
+
         fetchUserData();
         setTimeout(() => {
           navigate("/user");
@@ -53,9 +55,10 @@ const Login = () => {
         `${backendUrl}/user/get-user/${inputData.email}`
       );
       const user = data.data[0];
-      console.log(user);
+      
       dispatch(setCurrentUser(user));
       setLoginErrorMsg(false);
+      localStorage.setItem('user', JSON.stringify(user))
     } catch (error) {
       console.log(error);
     }
