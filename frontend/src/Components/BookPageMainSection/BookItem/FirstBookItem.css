@@ -51,7 +51,7 @@
 }
 
 .BookItemInfoWrapper {
-  height: 100px;
+  height: 120px;
   margin-bottom: 0.5rem;
 }
 
@@ -119,6 +119,11 @@
 
 .WhiteBtn:hover {
   background: linear-gradient(#acaba4, #eeede5);
+}
+
+.Underline {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 515px) {

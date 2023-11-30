@@ -105,7 +105,8 @@ const FirstBookItem = ({ book, index, openAboutBook }) => {
       <div className="BookItemInfoWrapper">
         <h5 onClick={openPopup}>{book?.book_details[0].title}</h5>
         <p className="FirstBookInfo">by {book?.book_details[0].author}</p>
-        <p className="FirstBookInfoWeeks">Weeks on TOP: {book?.weeks_on_list}</p>
+        <p className="FirstBookInfo ">Weeks on TOP: {book?.weeks_on_list}</p>
+        <p className="FirstBookInfoWeeks Underline" onClick={openPopup}>MORE INFO</p>
         <div>
           {currentUser && (
             <div>
