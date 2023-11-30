@@ -74,6 +74,7 @@
   font-size: 15px;
   margin: 0 0 1rem 0;
   text-align: left;
+  text-decoration: underline;
 }
 
 .AboutBookPopupButtonWrapper {
@@ -101,4 +102,41 @@
 
 .AboutBookPopupButton a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px)  {
+  .AboutBookPopup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .AboutBookPopupImageWrapper {
+    width: 100%;
+    padding: 1rem 0 0 0;
+  }
+
+  .AboutBookPopupImage {
+    width: 8rem;
+  }
+
+  .AboutBookPopupInfoWrapper {
+    width: 100%;
+    padding: 1rem 0 0 0;
+  }
+
+  .AboutBookPopupInfoWrapper h3 {
+    text-align: center;
+  }
+
+  .AboutBookPopupAuthor {
+    text-align: center;
+  }
+
+  .AboutBookPopupLinkToGoogleBooks {
+    text-align: center;
+  }
+
+  .AboutBookPopupButtonWrapper {
+    justify-content: center;
+  }
 }

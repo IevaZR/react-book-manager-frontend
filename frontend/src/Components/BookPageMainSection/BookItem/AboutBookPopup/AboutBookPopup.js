@@ -47,6 +47,7 @@ const AboutBookPopup = ({
             <p className="AboutBookPopupDescription">
               {book.book_details[0].description}
             </p>
+            <br/>
             <a
               href={
                 googleBookInfo
@@ -57,7 +58,7 @@ const AboutBookPopup = ({
               rel="noreferrer"
               className="AboutBookPopupLinkToGoogleBooks"
             >
-              Read more on Google books
+              CLICK HERE for more info
             </a>
           </div>
 
