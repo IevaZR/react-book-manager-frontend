@@ -104,6 +104,18 @@
   text-decoration: none;
 }
 
+.BookItemLinkToLoginBtn {
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  font-family: "Gilda Display", serif;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  color: black;
+}
+
 @media screen and (max-width: 768px)  {
   .AboutBookPopup {
     display: flex;

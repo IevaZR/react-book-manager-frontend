@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./AboutBookPopup.css";
 import AddToFavouritesBtn from "../../../AddToFavouritesBtn/AddToFavouritesBtn";
 import RemoveFromFavouritesBtn from "../../../RemoveFromFavouritesBtn/RemoveFromFavouritesBtn";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const AboutBookPopup = ({
   book,
@@ -11,6 +13,7 @@ const AboutBookPopup = ({
   updatedUserBooksList,
   bookInUserList,
 }) => {
+  const currentUser = useSelector((state) => state.user.currentUser);
   const handlePopupClose = (event) => {
     const popupElement = document.querySelector(".AboutBookPopup");
     if (popupElement && !popupElement.contains(event.target)) {
@@ -72,20 +75,25 @@ const AboutBookPopup = ({
                 Buy on Amazon
               </a>
             </button>
-            {!bookInUserList && (
-              <AddToFavouritesBtn
-                book={book}
-                bookCover={bookCover}
-                updatedUserBooksList={updateUserFavourites}
-              />
+            {currentUser && (
+              <>
+                {!bookInUserList && (
+                  <AddToFavouritesBtn
+                    book={book}
+                    bookCover={bookCover}
+                    updatedUserBooksList={updateUserFavourites}
+                  />
+                )}
+                {bookInUserList && (
+                  <RemoveFromFavouritesBtn
+                    book={book}
+                    bookCover={bookCover}
+                    updatedUserBooksList={updateUserFavourites}
+                  />
+                )}
+              </>
             )}
-            {bookInUserList && (
-              <RemoveFromFavouritesBtn
-                book={book}
-                bookCover={bookCover}
-                updatedUserBooksList={updateUserFavourites}
-              />
-            )}
+            {!currentUser && <button className="BookItemLinkToLoginBtn WhiteBtn"><Link to="/login">Add to My Books</Link></button>}
           </div>
         </div>
       </div>
