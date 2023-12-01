@@ -54,7 +54,7 @@
   border: none;
 }
 
-a {
+.ButtonLink {
   text-decoration: none;
   color: inherit;
   display: flex;

@@ -14,11 +14,11 @@ const HeroSection = () => {
         top fiction and non-fiction books available.{" "}
       </p>
       {!currentUser && <div className="HeroSectionButtonsWrapper">
-        <button className="HeroSectionButton WhiteBtn"><Link to="/login">Login</Link></button>
-        <button className="HeroSectionButton BlackBtn"><Link to="/register">Join Now</Link></button>
+        <button className="HeroSectionButton WhiteBtn"><Link to="/login" className="ButtonLink">Login</Link></button>
+        <button className="HeroSectionButton BlackBtn"><Link to="/register" className="ButtonLink">Join Now</Link></button>
       </div>}
       {currentUser && <div className="HeroSectionButtonsWrapper">
-        <button className="HeroSectionButton LogedInBtn WhiteBtn"><Link to="/user">Go to My Books Page</Link></button>
+        <button className="HeroSectionButton LogedInBtn WhiteBtn"><Link to="/user" className="ButtonLink">Go to My Books Page</Link></button>
       </div>}
       {/* <div className="HeroSectionImageWrapper"> */}
         {/* <img src={BookReadersCollage} alt="Book-readers"/> */}
