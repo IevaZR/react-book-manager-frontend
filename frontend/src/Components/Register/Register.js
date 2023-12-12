@@ -62,6 +62,7 @@ const Register = () => {
     validRegisterSurname();
     validRegisterEmail();
     validRegisterPassword();
+    alert('Please note that it may take a little while for the backend to start due to using render.com free plan')
     if (
       validRegisterName() &&
       validRegisterSurname() &&
