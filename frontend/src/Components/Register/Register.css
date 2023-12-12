@@ -72,11 +72,13 @@
 }
 
 .RegisterThankYouMsg {
-    font-family: 'Gilda Display', serif;
+   font-family: 'Gilda Display', serif;
     font-size: 20px;
     font-weight: 600;
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 0.2rem;
 }
 
